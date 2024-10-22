@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/i.jpg" alt="" id="img">
+    <button id="text">On</button>
+
+    <script>
+        var x = 0;
+function Ok(){
+    x++;
+    if(x == 1){
+        document.getElementById('img').src='https://avatars.mds.yandex.net/i?id=2a48ccc56d4e13e11b3ff1f469c50100bf526912-10932703-images-thumbs&n=13';
+        document.getElementById('text').innerText='off'
+    }else{
+        document.getElementById('img').src='https://avatars.mds.yandex.net/i?id=e00a2078f7c714722335ae292ea4bf12-5342131-images-thumbs&n=13';
+        document.getElementById('text').innerText='on'
+        x = 0;
+    }
+}
+
+let btn = document.getElementById("text");
+console.log(btn);
+btn.addEventListener('click',Ok);
+    </script>
+</body>
+</html>

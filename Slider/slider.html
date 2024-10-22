@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- slider owl css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <!-- animatecss -->
+
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style>
+    .owl-carousel .owl-nav button.owl-next{
+        position: absolute;
+        right: 5%;
+        transform: translateY(-50px);
+        font-size: 50px;
+        top: 50%;
+        /* background-color: white; */
+        color: white;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50px);
+        font-size: 50px;
+        color: white;
+    }
+    .row{
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        color: white;
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: black;
+        color: dimgray;
+    }
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+    }
+    </style>
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item wow animate__backInLeft"><img src="img/1.jpg" alt="">
+            <div class="row">
+                <h1 class="wow animate__backInRight" data-wow-duration="2s">Photo</h1>
+                <p class="wow animate__backInLeft" data-wow-delay="2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam obcaecati perspiciatis nostrum, distinctio culpa ex optio expedita reiciendis ullam earum laborum porro tenetur beatae voluptates repudiandae sint esse ut amet.\</p>
+            </div>
+        </div>
+        <div class="item"><img src="img/2.jpg" alt=""></div>
+        <div class="item"><img src="img/3.jpg" alt=""></div>
+        <div class="item"><img src="img/4.jpg" alt=""></div>
+        <div class="item"><img src="img/5.jpg" alt=""></div>
+         
+    </div>
+</body>
+
+<script src="js/jquary3-7.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    mouseDrag:false,
+    center:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+var owl = $('.owl-carousel');
+owl.owlCarousel();
+// Listen to owl events:
+owl.on('changed.owl.carousel', function(event) {
+    new WOW().init();
+})
+</script>
+</html>

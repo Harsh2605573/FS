@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  article {
+    margin-bottom: 2rem;
+  }
+  
+  article h2 {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  article p {
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }

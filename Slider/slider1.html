@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- slider owl css -->
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <!-- animatecss -->
+     <link rel="stylesheet" href="css/animate.min.css">
+     <!-- font family -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+     <style>
+        .owl-carousel .owl-nav button.owl-next{
+        position: absolute;
+        right: 1%;
+        transform: translateY(-50px);
+        font-size: 50px;
+        top: 50%;
+        /* background-color: rgb(255, 255, 255); */
+        color: black;
+        /* width: 50px;
+        height: 50px; */
+        
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        position: absolute;
+        left: 1%;
+        top: 50%;
+        transform: translateY(-50px);
+        font-size: 50px;
+        color: rgb(2, 2, 2);
+        border-radius: 50px 50px 50px;
+    }
+   
+    /* .row{
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        color: white;
+    } */
+    .owl-theme .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+        border-radius: 40px;
+        background-color: black;
+        color: dimgray;
+        display: none;
+    }
+    /* .owl-carousel .owl-item img {
+        display: block;
+        width: 100vw;
+        height: 100px;
+    } */
+    .row{
+        font-size: x-large;
+        font-family: 'Poppins', sans-serif;
+        /* text-align: center; */
+        /* background-color: aqua; */
+        margin: 10px;
+    }
+    .price{
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: seagreen;
+        /* text-align: center; */
+    }
+    .button{
+        text-align: center;
+    }
+     </style>   
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="img/t1.png" alt="">
+            <div class="row"><b>#1. T-Shirt Mockup</b></div>
+            <div class="price"><b>$8.00</b></div>
+            <div class="button"><button>Add to cart</button></div>
+        </div>
+        <div class="item"><img src="img/t2.png" alt="">
+            <div class="row"><b>#2. Couple T-Shirt</b></div>
+            <div class="price"><b>$8.00</b></div>
+            <div class="button"><button>Add to cart</button></div>
+        </div>
+        <div class="item"><img src="img/t3.png" alt="">
+            <div class="row"><b>#3. Girls T-Shirt</b></div>
+            <div class="price"><b>$8.00</b></div>
+            <div class="button"><button>Add to cart</button></div>
+        </div>
+        <div class="item"><img src="img/t4.png" alt="">
+            <div class="row"><b>#4. Girls T-Shirt</b></div>
+            <div class="price"><b>$8.00</b></div>
+            <div class="button"><button>Add to cart</button></div>
+        </div>
+        <div class="item"><img src="img/t5.png" alt="">
+            <div class="row"><b>#5. New Couple T-shirt</b></div>
+            <div class="price"><b>$8.00</b></div>
+            <div class="button"><button>Add to cart</button></div>
+        </div>     
+    </div>
+</body>
+<script src="js/jquary3-7.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    mouseDrag:false,
+    center:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+var owl = $('.owl-carousel');
+owl.owlCarousel();
+// Listen to owl events:
+owl.on('changed.owl.carousel', function(event) {
+    new WOW().init();
+})
+</script>
+</html>

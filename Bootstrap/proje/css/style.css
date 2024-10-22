@@ -1,0 +1,94 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+.color{
+    color: #252f3a !important;
+}
+.barlow {
+    font-family: "Barlow", sans-serif;
+  }
+.back{
+   border: 2px solid #454fa2 !important; border-color: #454FA2;
+}
+.btn2{
+    background-color: transparent !important;
+    border-color: #454FA2 !important;
+    color: #454FA2 !important;
+}
+/* .btn2:hover{
+  background-color: #454FA2 !important;
+  color: white !important;
+} */
+.list-none{
+    list-style: none !important;
+}
+.main{
+    background: linear-gradient(to bottom, rgb(255 255 255 / 70%), rgb(255 255 255 / 83%)), url('/img/overlay.webp');
+    padding-bottom: 20px;
+}
+.f-50{
+    font-size: 50px;
+}
+.effect{
+    background-color: #454fa2 !important;
+    transition: all ease-in-out 0.4s;
+}
+.effect:hover{
+    background-color: black !important;
+}
+.cell{
+    box-shadow: 0px 3px 1px -2px rgba(58, 53, 65, 0.2), 0px 2px 2px 0px rgba(58, 53, 65, 0.14), 0px 1px 5px 0px rgba(58, 53, 65, 0.12);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    border-radius: 24px;
+    margin-top: 0.75rem;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    display: none;
+}
+.owl-carousel .owl-nav button.owl-next{
+    display: none;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background-color: #454fa2;
+    color: aqua;
+    width: 30px !important;
+    height: 8px !important;
+    border-radius: 24px !important;
+    margin: 5px !important;
+}
+.owl-theme .owl-dots .owl-dot span:hover{
+    background-color: #454fa2 !important;
+}
+.shodow{
+    box-shadow: 3px 2px 1px -1px rgba(58, 53, 65, 0.2), 0px 1px 1px 0px rgba(58, 53, 65, 0.14), 0px 1px 3px 0px rgba(58, 53, 65, 0.12);
+}
+.section{
+    width: 100%;
+    height: auto;
+    background-color: #ecf3f3;
+}
+.owl-dots{
+    text-align: left !important;
+}
+text{
+    font-size: 16px; transition: all ease-in-out 0.4s;
+}
+.text:hover{
+    border-bottom: 2px solid white;
+}
+@media (max-width:991px){
+    .test{
+        font-size: 30px
+    }
+}
+footer{
+    width: 100%; height: auto;
+    background-color: #454FA2;
+}
+.icon i:hover{
+   background-color: #07bc0c;
+   border-radius: 50%;
+}
